@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="action.php" method="POST">
+        <table>
+            <tr>
+                <td colspan="3">
+                    <h1>Biodata Diri</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>Nama:</td>
+                <td colspan="2"><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Alamat:</td>
+                <td colspan="2"><input type="text" name="address" id="address"></td>
+            </tr>
+            <tr>
+                <td>Tempat:</td>
+                <td colspan="2"><input type="text" name="place" id="place"></td>
+            </tr>
+            <tr>
+                <td>Umur:</td>
+                <td colspan="2"><input type="number" name="age" id="age"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Jenis Kelamin:</td>
+                <td colspan="2"><input type="radio" name="gender" value="Pria" id="genderMale">Pria</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="radio" name="gender" value="Wanita" id="genderFemale">Wanita</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Bahasa Pemrograman yang Dikuasai:</td>
+                <td colspan="2"><input type="checkbox" name="programmingLang[]" value="php" id="programmingLangPHP"> PHP</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="programmingLang[]" value="javascript" id="programmingLangJS"> JavaScript</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="programmingLang[]" value="python" id="programmingLangPython"> Python</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="programmingLang[]" value="java" id="programmingLangJava"> Java</td>
+            </tr>
+            <tr>
+                <td>Kota Asal:</td>
+                <td colspan="2">
+                    <select name="kotaAsal" id="kotaAsal">
+                        <option value="jakarta">Jakarta</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="bogor">Bogor</option>
+                        <option value="bekasi">Bekasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pesan dan Kesan:</td>
+                <td colspan="2"><textarea name="comment" id="comment" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="submit" id=""></td>
+                <td><input type="reset" name="reset" id=""></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
